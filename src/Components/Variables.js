@@ -13,5 +13,4 @@ export const test = [
     initialContent:"hola a todos",
     fullContent:"hola a todos esto es el mejor vida"
     }
-    //comentario de test
 ]
