@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
 import New from './Components/New';
-import NewsContainer from './Components/NewsContainer';
 import { test } from './Components/Variables.js';
 
 
@@ -12,7 +11,7 @@ class Html extends React.Component {
     this.state = {...this.props.test}
   }
 render (){
-  return <><NewsContainer test = {test}/>
+  return <><New test = {test}/>
   </>
 }
 }
