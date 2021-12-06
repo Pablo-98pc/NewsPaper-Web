@@ -1,7 +1,6 @@
 import React from 'react';
 import NewContent from './New-Content.js';
-import {test} from './Variables.js'
-import {sections} from './Variables.js'
+import {test, sections, mainContent} from './Variables.js'
 import Likes from './Likes.js';
 
 class Header extends React.Component{

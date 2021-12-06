@@ -8,7 +8,7 @@
     margin: auto;
 }
 h3 {
-    color: green
+    color: green;
     ;
 }
 .info-container {
@@ -32,7 +32,7 @@ h3 {
 .header{
     display: flex;
     flex-direction: column;
-    background: green;
+    background: #bebdf9;
 }
 .header-top{
     display: flex;
@@ -47,3 +47,32 @@ h3 {
     width: 90%;
     justify-content: space-around;
 }
+
+/* Main */
+.trendy{
+    display: flex;
+    flex-direction: row;
+    background-color: #3a49fe;
+    justify-content: center;  
+    padding: 20px;
+}
+
+.main-container{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin:10px
+}
+
+.text-main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-weight: bolder;
+    font-size: 23px;
+    text-align: left;
+    color: white;
+}
+
