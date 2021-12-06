@@ -8,6 +8,7 @@ class Main extends React.Component{
         super(props)
         this.state = {main: this.props.mainContent}
     }
+
     render(){
         let data = this.state.main.map(principal =><div className="main-container">
                 <img src={principal.picUrl} alt="important new" width="410px" height="250px"/>
@@ -18,5 +19,6 @@ class Main extends React.Component{
            {data}
            </div>
     }
+    
 }
 export default Main
