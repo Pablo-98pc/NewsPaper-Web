@@ -11,7 +11,8 @@ class Html extends React.Component {
     this.state = {...this.props.test}
   }
 render (){
-  return <><New test = {test}/>
+  return <>
+  <New test = {test}/>
   </>
 }
 }

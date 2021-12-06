@@ -18,7 +18,7 @@ class New extends React.Component{
                 <Likes />
             </div>
             <div className="img-container">
-                <img src={item.picUrl} alt="loading"width="310px" height="210px"></img>
+                <img src={item.picUrl} alt="loading"width="310px" height="210px"/>
             </div> 
             </div>
            ) 
