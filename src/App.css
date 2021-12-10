@@ -1,8 +1,12 @@
+/* New */
 .new {
     display: flex;
     flex-direction: row;
     width: 900px;
     height: 250px;
+    background-color: gainsboro;
+    padding: 10px;
+    margin-bottom:5px;
 }
 .img-container {
     margin: auto;
@@ -16,6 +20,15 @@ h3 {
     flex-direction: column;
     justify-content: space-around;
 }
+
+.NewsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .content > span {
     color: #707070;
 }
@@ -32,7 +45,7 @@ h3 {
 .header{
     display: flex;
     flex-direction: column;
-    background: #bebdf9;
+    background: gainsboro;
 }
 .header-top{
     display: flex;
@@ -76,3 +89,15 @@ h3 {
     color: white;
 }
 
+
+/*********Selection*********/
+.selection {
+    display: flex;
+    flex-direction: column;
+
+}
+/*********MiniNew*********/
+.mini_new{
+    display: flex;
+    flex-direction: column;
+}

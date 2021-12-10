@@ -5,8 +5,12 @@ import './App.css';
 import New from './Components/New';
 import Header from './Components/Header';
 import Main from './Components/Main';
+import Selection from './Components/Selection';
 
-import { test, mainContent, sections } from './Components/Variables.js';
+import { test, mainContent, sections, elements } from './Components/Variables.js';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+//import images from './assets/imagenes';
 
 class Html extends React.Component {
   constructor(props){
@@ -18,6 +22,7 @@ class Html extends React.Component {
     <Header sections={sections}/>
     <Main mainContent={mainContent}/>
     <New test = {test}/>
+    <Selection elements={elements}/>
     </>
   }
 }
