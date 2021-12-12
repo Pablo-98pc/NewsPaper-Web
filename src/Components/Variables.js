@@ -41,7 +41,15 @@ export const test = [
     },
 ]
 
+export const dayNew = [
+
+    {title : "Las noticias mas importante tienen que ser éstas que estan en todo el medio",
+    picUrl:"https://i.blogs.es/4c7b60/portadaresena-ghostbusters-afterlife_-el-apapacho-al-corazon-que-probablemente-necesitas/1366_2000.jpeg",
+    },
+]
+
 export const mainContent = [
+
     {title : "Las noticias mas importante tienen que ser éstas que estan en todo el medio",
     picUrl:"https://i.blogs.es/4c7b60/portadaresena-ghostbusters-afterlife_-el-apapacho-al-corazon-que-probablemente-necesitas/1366_2000.jpeg",
     },

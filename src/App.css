@@ -13,7 +13,6 @@
 }
 h3 {
     color: green;
-    ;
 }
 .info-container {
     display: flex;
@@ -45,39 +44,82 @@ h3 {
 .header{
     display: flex;
     flex-direction: column;
-    background: gainsboro;
+    align-items: center;
 }
 .header-top{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     align-items: center;
-    
+    font-size: 100px;
+    font-weight: bolder;
+    justify-content: center;
+    margin-bottom: 1px;
+    background: gainsboro;
 }
 .sections{
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 100%;
     justify-content: space-around;
+    margin-bottom: 10px;
+    background: rgb(238, 235, 235);
+    padding: 10px;
+    align-items: center;
+}
+
+.socialMedia{
+    display: flex;
+    flex-direction: row;
+}
+.socialMedia div{
+    margin: 10px;
 }
 
 /* Main */
 .trendy{
     display: flex;
-    flex-direction: row;
-    background-color: #3a49fe;
-    justify-content: center;  
-    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
 }
-
+.super-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.text-day{
+    font-size: 30px;
+    font-weight: bolder;
+    align-items: center;
+}
+.row-container{
+    display: flex;
+    flex-direction: row;
+    background-color: gainsboro;
+    justify-content: space-between;  
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+ 
+}
 .main-container{
     position: relative;
     display: inline-block;
     text-align: center;
-    margin:10px
+    margin: 10px;
 }
 
-.text-main{
+.image-hover :hover{
+    border: solid;
+    border-width: 5px;
+    border-color: blue;
+}
+
+.text-main {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -87,8 +129,8 @@ h3 {
     font-size: 23px;
     text-align: left;
     color: white;
+   
 }
-
 
 /*********Selection*********/
 .selection {
@@ -96,6 +138,15 @@ h3 {
     flex-direction: row;
     background-color: greenyellow;
     padding: 20px;
+}
+
+.logo-minisection{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-minisection img{
+    margin-top:6px;
 }
 
 /*********MiniNews*********/
@@ -106,6 +157,5 @@ h3 {
 }
 
 .ind_new {
-    margin: 10px;
-    
+    margin: 10px;    
 }

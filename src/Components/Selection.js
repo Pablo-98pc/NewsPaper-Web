@@ -2,6 +2,8 @@ import React from 'react';
 import {elements} from './Variables.js'
 import MiniNews from './MiniNews.jsx';
 
+import images from '../assets/images'
+
 class Selection extends React.Component{
     constructor(props){
         super(props)
@@ -18,7 +20,13 @@ class Selection extends React.Component{
             </div>
            ) 
        return <div className="selection">
-           {selectionGroup}
+          
+           <div className="logo-minisection">
+                <img src={images[0].img} alt="logo" height='30px' width='30px'/>   
+                {selectionGroup}
+            </div>
+            
+
            <MiniNews elements={elements}/>
            </div>
     }
