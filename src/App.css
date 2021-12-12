@@ -93,12 +93,19 @@ h3 {
 /*********Selection*********/
 .selection {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    background-color: greenyellow;
+    padding: 20px;
+}
 
-}
-/*********MiniNew*********/
-.mini_new{
+/*********MiniNews*********/
+.mini_news{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 100%;
 }
-/*****/
+
+.ind_new {
+    margin: 10px;
+    
+}

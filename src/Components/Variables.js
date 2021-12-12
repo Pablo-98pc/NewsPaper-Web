@@ -73,14 +73,13 @@ export const sections = [
 
 
 export const elements = [
-    {title : "Últimas novedades",
-    sect1: "Test Opcion 1",
-    sect2: "Test Opcion 2",
-    sect3: "Test Opcion 3"},
-    {description : "Cómo eliminar mensajes de una fecha concreta en Telegram",
+    {title : "Últimas novedades" ,sect1: "Test Opcion 1", sect2: "Test Opcion 2", sect3: "Test Opcion 3", sect4: "Test Opcion 4", sect5: "Test Opcion 5"},
+    {description : "Cómo eliminar mensajes aaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaa",
     pic: "https://i.blogs.es/8c78a5/netatmo/1366_2000.jpg"},
-    {description : "Cómo eliminar mensajes de una fecha concreta en Telegram",
+    {description : "Cómo eliminar",
     pic: "https://i.blogs.es/8c78a5/netatmo/1366_2000.jpg"},
-    {description : "Cómo eliminar mensajes de una fecha concreta en Telegram",
+    {description : "Telegram",
     pic: "https://i.blogs.es/8c78a5/netatmo/1366_2000.jpg"},
-]
+    {description : "Telegram aofhalkfnasfhsf",
+    pic: "https://i.blogs.es/8c78a5/netatmo/1366_2000.jpg"},
+] 

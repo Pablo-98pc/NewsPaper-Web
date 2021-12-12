@@ -22,7 +22,7 @@ class Html extends React.Component {
     <Header sections={sections}/>
     <Main mainContent={mainContent}/>
     <New test = {test}/>
-    <Selection elements={elements}/>
+    <Selection elements={elements} newscontent={elements.news_content}/>
     </>
   }
 }
