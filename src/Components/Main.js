@@ -10,9 +10,11 @@ class Main extends React.Component{
     }
 
     render(){
-        let data = this.state.main.map(principal =><div className="main-container">
-                <img src={principal.picUrl} alt="important new" width="410px" height="250px" className="image-hover"/>
+        let data = this.state.main.map(principal =><div className="main"><div className="main-container">
+                <img src={principal.picUrl} alt="important new" width="410px" height="250px"/></div>
+                <div>
                 <p className="text-main">{principal.title}</p>  
+        </div>
         </div>
         ) 
 

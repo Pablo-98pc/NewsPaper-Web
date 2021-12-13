@@ -22,7 +22,7 @@ class Selection extends React.Component{
        return <div className="selection">
           
            <div className="logo-minisection">
-                <img src={images[0].img} alt="logo" height='30px' width='30px'/>   
+                <img src={images[0].img} alt="logo" height='50px' width='50px'/>   
                 {selectionGroup}
             </div>
             
