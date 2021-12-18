@@ -82,7 +82,10 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   
+}
+
+.big-container{
+    width: 100%;
 }
 .super-container{
     display: flex;
@@ -90,18 +93,20 @@ h3 {
     justify-content: center;
     align-items: center;
     margin: 10px;
+    height: 600px;
 }
 .text-day{
     font-size: 30px;
     font-weight: bolder;
     align-items: center;
+    height: 70px;
 }
 .row-container{
     display: flex;
     flex-direction: row;
     background-color: gainsboro;
     justify-content: space-between;  
-    padding: 20px;
+    padding: 50px;
     width: 100%;
     margin-bottom: 10px;
  
@@ -110,12 +115,13 @@ h3 {
     position: relative;
     display: inline-block;
     text-align: center;
-    margin: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 .main-container :hover{
     border: solid;
-    border-width: 10px;
+    border-width: 5px;
     border-color: blue;
 }
 
@@ -130,6 +136,28 @@ h3 {
     text-align: left;
     color: white;
    
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 600px;
+}
+.description-container > img {
+    justify-content: center;
+    align-items: center;
+}
+
+.long-description{
+    font-size: 15px;
+    align-items: center;
+    height: 400px;
+    width:800px;
+    margin-top: 30px;
+    
 }
 
 /*********Selection*********/

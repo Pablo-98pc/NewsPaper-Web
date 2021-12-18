@@ -7,7 +7,7 @@ import Header from './Components/Header';
 import Main from './Components/Main';
 import Selection from './Components/Selection';
 
-import { test, dayNew,  mainContent, sections, elements } from './Components/Variables.js';
+import { test, dayNew, descriptionNew,  mainContent, sections, elements } from './Components/Variables.js';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import images from './assets/imagenes';
@@ -20,11 +20,12 @@ class Html extends React.Component {
   render (){
     return <>
     <Header sections={sections}/>
-    <Main dayNew = {dayNew} mainContent={mainContent}/>
+    <Main dayNew = {dayNew} mainContent={mainContent} descriptionNew= {descriptionNew} visible = {true}/>
     <New test = {test}/>
     <Selection elements={elements}/>
     </>
   }
+  
 }
 
 ReactDOM.render(

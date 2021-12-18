@@ -43,8 +43,16 @@ export const test = [
 
 export const dayNew = [
 
-    {title : "Las noticias mas importante tienen que ser éstas que estan en todo el medio",
+    {title : "La noticia del día o lo que sea",
     picUrl:"https://i.blogs.es/4c7b60/portadaresena-ghostbusters-afterlife_-el-apapacho-al-corazon-que-probablemente-necesitas/1366_2000.jpeg",
+    },
+]
+
+export const descriptionNew = [
+    {title : "La noticia del día o lo que sea",
+    picUrl:"https://i.blogs.es/4c7b60/portadaresena-ghostbusters-afterlife_-el-apapacho-al-corazon-que-probablemente-necesitas/1366_2000.jpeg",
+
+    longDescription : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur finibus sapien, vel aliquam lorem interdum blandit. Curabitur eget aliquet tortor. Quisque quis ligula tincidunt, rhoncus turpis sit amet, dapibus purus. Vivamus commodo sed diam eget hendrerit. Nullam a ullamcorper risus, vitae elementum nulla. Duis non dolor blandit, faucibus tortor sed, dapibus sapien. Aenean vitae fringilla sem. Praesent vehicula quis dolor non venenatis. Nulla nec tellus quis tellus vestibulum mattis. Cras ullamcorper blandit felis, non tempor eros cursus sit amet. Suspendisse ultrices nunc et est suscipit, ac sagittis nisl rutrum.Praesent ac tellus justo. Morbi in turpis libero. Morbi elementum magna ex, eu consequat dolor luctus nec. Praesent sit amet lectus vel dolor condimentum bibendum et dictum urna. Vestibulum accumsan ornare nibh ut vestibulum. Duis non blandit lorem. Nam at blandit augue. Sed nec massa faucibus, porta lectus sed, blandit arcu. Phasellus ultrices diam eu lacus volutpat convallis. Ut accumsan malesuada tortor, sit amet pulvinar mi. Vestibulum est enim, volutpat vitae augue in, cursus efficitur justo. Nunc eu efficitur orci. Morbi et justo vitae neque vulputate hendrerit et efficitur metus. In congue, nunc ac dapibus fringilla, nisl quam volutpat nunc, et aliquet odio nulla vel purus. Suspendisse in sodales sem, ac placerat risus."
     },
 ]
 
