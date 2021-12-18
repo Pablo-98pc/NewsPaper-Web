@@ -1,5 +1,5 @@
 import React from 'react';
-import {test} from './Variables.js'
+
 
 class Likes extends React.Component{
     constructor(props) {
@@ -12,6 +12,7 @@ class Likes extends React.Component{
         this.handleSubtractDislikes = this.handleSubtractDislikes.bind(this)
 
     }
+
     handleSumLikes(){
         this.setState({countLikes : this.state.countLikes + 1})
     }
@@ -30,6 +31,7 @@ class Likes extends React.Component{
         }
         
     }
+    
 
     render() {
         let likes = undefined

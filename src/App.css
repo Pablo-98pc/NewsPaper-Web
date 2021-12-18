@@ -1,20 +1,21 @@
-.new {
-    display: flex;
-    flex-direction: row;
-    width: 900px;
-    height: 250px;
-}
+
 .img-container {
     margin: auto;
+    
 }
-h3 {
+.info-container > h3 {
     color: green
     ;
+}
+.info-containermax > h3 {
+  color: green
+  ;
 }
 .info-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: flex-start;
 }
 .content > span {
     color: #707070;
@@ -25,4 +26,194 @@ h3 {
 .countOfLikes{
     display: flex;
     justify-content: space-between;
+}
+.newsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+/*prueba*/
+.new {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 900px;
+    height: 400px;
+}
+.newMax {
+  width: 800px;
+  --borderWidth: 20px;
+  background: white;
+  position: relative;
+  padding: 10px;
+  border-radius: var(--borderWidth);
+}
+.info-containermax > h2 {
+  text-decoration: underline black !important;
+}
+.img-containermax {
+  display: flex;
+  justify-content: center;
+}
+.info-containermax > h2 {
+  display: flex;
+  justify-content: center;
+}
+.info-containermax{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+}
+.card {
+  width: 900px;
+}
+
+.card__content {
+  text-align: center;
+  position: relative;
+  transition: transform 3s;
+  transform-style: preserve-3d;
+
+}
+
+.card:hover .card__content {
+ animation-name: rotate;
+ animation-duration: 4s;
+ animation-fill-mode: forwards;
+ animation-direction: normal;
+ animation-iteration-count: 1;
+  
+}
+.card-show {
+    width: 900px;
+}
+.card-show .card__content {
+    
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+     
+   }
+
+
+
+.card__front,
+.card__back {
+  position: absolute;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  width: 900px;
+  height: 400px;
+  align-content: center;
+}
+
+.card__front {
+  background: linear-gradient(to right, #000000, #434343);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: white;
+  font-size: small;
+}
+.card_front > .card_title{
+  color: white;
+}
+
+.card__front::before {
+  content: '';
+  position: absolute;
+  top: 1em;
+  bottom: 1em;
+  left: 1em;
+  right: 1em;
+  border: 3px solid currentColor;
+  transform: translateZ(3rem);
+}
+
+.card__title {
+  font-size: 2rem;
+  transform: translateZ(9rem);
+  order: 2;
+  text-transform: uppercase;
+}
+
+.card__subtitle {
+  transform: translateZ(6rem);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: .75rem;
+  font-weight: 700;
+  opacity: .7;
+}
+
+.card_body {
+  display: flex !important;
+  flex-direction: row;
+ width: 850px;
+ height: 400px;
+ transform: translateZ(6rem);
+  line-height: 1.6;
+  border: 1px solid black;
+  
+}
+
+
+
+.card__back {
+  transform: rotateY(.5turn);
+  color: #333;
+  background:white;
+}
+@keyframes rotate {
+    from {transform:rotateY(0turn) } 
+    
+    to{transform: rotateY(.5turn)} 
+}
+input {
+    margin-top: 30px;
+    width: 400px;
+    font-family: 'Oswald', sans-serif;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input:hover {
+    background: linear-gradient(to right, #232526, #414345);
+    color: white;
+}
+/*prueba2*/
+.newMax:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background:linear-gradient(to right, #1f1c2c, #928dab);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+  ;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
