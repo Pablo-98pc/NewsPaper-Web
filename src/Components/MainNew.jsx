@@ -15,9 +15,9 @@ class MainNew extends React.Component {
         <div className='super'>         
             {
                 this.props.dataInfo.map(item => <div className="super-container">
-                    <p className="text-day">{item[15].title}</p>
+                    <p className="text-day">{item[16].title}</p>
                     {/* {console.log(item)} */}
-                    <img src={item[17].urlToImage} alt="day new" width="350px" height="200px" />
+                    <img src={item[16].urlToImage} alt="day new" width="350px" height="200px" />
                 </div>
                 )}
 

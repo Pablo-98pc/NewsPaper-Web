@@ -27,7 +27,7 @@ class Html extends React.Component {
     const url = 'https://newsapi.org/v2/everything?q=tesla&from=2021-11-18&sortBy=publishedAt&apiKey=';
     const resp = await axios.get(url + apiKey);
     let data = resp.data.articles;
-    // {console.log(dataInfo)}
+    {console.log(dataInfo)}
     return data; 
    }
    

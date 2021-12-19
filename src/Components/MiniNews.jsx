@@ -5,18 +5,19 @@ import axios from 'axios';
 
 class MiniNews extends React.Component {
     constructor(props) {
-        super(props)
-        this.state = { elements: this.props.elements }
+        super(props) ;
     }
+    
     render() {
-        let info = this.state.elements.map((ind) =>
+        return <><p>Funciona</p></>
+        // let info = this.props.dataInfo.map((ind) =>
 
-            <div className='ind_new'>
-                <img src={ind.pic} alt="image" width="310px" height="210px" />
-                <p>{ind.description}</p>
-            </div>
-        )
-        return <div className="mini_news">{info}</div>
+        //     <div className='ind_new'>
+        //         <img src={ind.urlToImage} alt="image" width="310px" height="210px" />
+        //         <p>{ind.description}</p>
+        //     </div>
+        // )
+        // return <div className="mini_news">{info}</div>
     }
 }
 export default MiniNews

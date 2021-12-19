@@ -13,7 +13,7 @@ class News extends React.Component {
             
     render() {
         let i = 1
-        let groupOfNews = this.props.dataInfo[0].map (item => { return <div key={i++}className="new"> 
+        let groupOfNews = this.props.dataInfo.map (item => { return <div key={i++}className="new"> 
        
         <div className="info-container">
             <h2>{item.title}</h2>
@@ -28,6 +28,7 @@ class News extends React.Component {
         }
         )
         return <>{groupOfNews}</>
+    
     }
 }
 export default News
