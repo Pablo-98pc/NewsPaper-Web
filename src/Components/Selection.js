@@ -7,7 +7,7 @@ import images from '../assets/images'
 class Selection extends React.Component {
     constructor(props) {
         super(props) ;
-        // {console.log(this.props.dataInfo[0])}
+        {console.log(this.props.dataInfo[0])}
        
     }
 
