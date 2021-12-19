@@ -8,7 +8,7 @@ class New extends React.Component{
         super(props)
         this.state = {items:this.props.test}
     }
-
+   
     render(){
         let groupOfNews = this.state.items.map((item)=><div className="new">
             <div className="info-container">
