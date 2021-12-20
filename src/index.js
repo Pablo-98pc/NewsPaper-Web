@@ -15,6 +15,7 @@ import { render } from '@testing-library/react';
 //import images from './assets/imagenes';
 
 let dataInfo = [];
+const keyword = 'tesla'
 
 class Html extends React.Component {
   constructor(props){
@@ -24,12 +25,12 @@ class Html extends React.Component {
  
   async getNews() {
     const apiKey = '1e9c9342568842769209278c3e668c01';
-    const keyword = 'tesla'
+    
     // const url = `https://newsapi.org/v2/everything?q=${keyword}&from=2021-11-18&sortBy=publishedAt&apiKey=`;
     const url = `https://newsapi.org/v2/everything?q=${keyword}&from=2021-11-19&sortBy=publishedAt&apiKey=`
     const resp = await axios.get(url);
     let data = resp.data.articles;
-    // {console.log(dataInfo)}
+    {console.log(dataInfo)}
     return data; 
    }
    
@@ -42,7 +43,7 @@ class Html extends React.Component {
     
     return <>
     
-    <Header sections={sections}/>
+    <Header sections={sections} keyword={keyword}/>
     <MainNew dataInfo={dataInfo} visible = {true}/>
     <News dataInfo={dataInfo}/>
     <Selection dataInfo={dataInfo}/>

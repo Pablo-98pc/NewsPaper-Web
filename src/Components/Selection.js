@@ -7,7 +7,7 @@ import images from '../assets/images'
 class Selection extends React.Component {
     constructor(props) {
         super(props) ;
-        {console.log(this.props.dataInfo[0])}
+        {console.log(this.props.dataInfo)}
        
     }
 
@@ -16,7 +16,7 @@ class Selection extends React.Component {
         return <div className="selection">
             <p>Las noticias más actuales</p>
             <div className="container-miniselection">
-                <MiniNews dataInfo={this.props.dataInfo[0]}/>
+                <MiniNews dataInfo={this.props.dataInfo}/>
             </div>
         </div>
     }

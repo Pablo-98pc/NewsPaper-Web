@@ -3,23 +3,31 @@ import NewContent from './New-Content.js';
 import { test, sections, mainContent } from './Variables.js'
 import Likes from './Likes.js';
 import images from '../assets/images'
-
+import axios from 'axios';
 
 class Header extends React.Component {
     constructor(props) {
         super(props)
-        this.state = { nav: this.props.sections }
+        this.state = { nav: this.props.sections, keyword: props.keyword}
     }
-
     render() {
+        
+        function handleSearch (event){
+            this.setState(() => ({ keyword: this.state.keyword }));
+          
+            if(event.charCode == 13) {
+                this.props.keyword.onChange(event.target.value);
+            }
+            
+        }
+        console.log(this.state.keyword)
+
         let logo = <div className="header-top">
             <img src={images[0].img} alt="logo" height='100px' width='100px' />
             <p>NEWS</p>
         </div>
 
-        // let search = <div className="search">
-        //     <img src={images[1].img} alt="search" height='30px' width='30px'/>
-        // </div>
+        let search = <input type='text' placeholder = 'search news' className="search" onKeyPress={handleSearch} ></input>
         let socialMedia = <div className="socialMedia">
             <div className="tiktok">
                 <img src={images[2].img} alt="tiktok" height='40px' width='40px' />
@@ -38,14 +46,15 @@ class Header extends React.Component {
             <button type="button" class={ind.class}>{ind.title}</button>
         </div>
         )
-        return <div className="header">
-            {logo}
+        return (<div className="header">
+            
+            {logo }
             <div className="sections">
-                {/* {search} */}
+                {search}
                 {navbar}
                 {socialMedia}
             </div>
-        </div>
+        </div>)
     }
 }
 export default Header
