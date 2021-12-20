@@ -24,11 +24,11 @@ class Html extends React.Component {
   }
  
   async getNews() {
-    const apiKey = '1e9c9342568842769209278c3e668c01';
+    const apiKey = 'cd5461b99fd0439eb51406ff9ee39f53';
     
     // const url = `https://newsapi.org/v2/everything?q=${keyword}&from=2021-11-18&sortBy=publishedAt&apiKey=`;
-    const url = `https://newsapi.org/v2/everything?q=${keyword}&from=2021-11-19&sortBy=publishedAt&apiKey=`
-    const resp = await axios.get(url);
+    const url = `https://newsapi.org/v2/everything?q=${keyword}&from=2021-11-20&sortBy=publishedAt&apiKey=`
+    const resp = await axios.get(url+apiKey);
     let data = resp.data.articles;
     {console.log(dataInfo)}
     return data; 

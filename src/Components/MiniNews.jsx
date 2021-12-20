@@ -6,10 +6,11 @@ import axios from 'axios';
 class MiniNews extends React.Component {
     constructor(props) {
         super(props)
+        {console.log(props.dataInfo[0])}
     }
 
     render() {
-        let info = this.props.dataInfo.map((ind) =>
+        let info = this.props.dataInfo[0].map((ind) =>
 
             <div className='ind_new'>
                 <img src={ind.urlToImage} alt="image" width="310px" height="210px" />

@@ -6,7 +6,7 @@ class MainNew extends React.Component {
     
     constructor(props) {
         super(props) ;
-        // console.log(this.props.dataInfo[0])
+        console.log(props.dataInfo[0])
     }
     
     render() {
